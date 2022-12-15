@@ -27,8 +27,7 @@ resource "pagerduty_escalation_policy" "support" {
   rule {
     escalation_delay_in_minutes = 30
     target {
-      type = "user"
-      id   = pagerduty_user.eddard_stark.id
+      id   = pagerduty_user.ronald_green.id
     }
     target {
       type = "schedule_reference"
@@ -61,8 +60,7 @@ resource "pagerduty_escalation_policy" "operations" {
   rule {
     escalation_delay_in_minutes = 60
     target {
-      type = "user"
-      id   = pagerduty_user.tywin_lannister.id
+      id   = pagerduty_user.ronald_green.id
     }
     target {
       type = "schedule_reference"

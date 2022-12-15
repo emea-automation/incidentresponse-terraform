@@ -70,13 +70,10 @@ resource "pagerduty_ruleset_rule" "example_application_website_warning_0" {
   }
   actions {
     route {
-      value = pagerduty_service.example_application_website.id
+      value = pagerduty_service.pdcommerce_frontend.id
     }
     severity {
       value = "warning"
-    }
-    priority {
-      value = data.pagerduty_priority.p3.id
     }
     annotate {
       value = "Routed via global rule: example_application_website_warning_0"
@@ -165,13 +162,10 @@ resource "pagerduty_ruleset_rule" "example_application_database_critical" {
   }
   actions {
     route {
-      value = pagerduty_service.example_application_database.id
+      value = pagerduty_service.pdcommerce_db.id
     }
     severity {
       value = "critical"
-    }
-    priority {
-      value = data.pagerduty_priority.p1.id
     }
     annotate {
       value = "Routed via global rule: example_application_database_critical"

@@ -1,16 +1,11 @@
 /* 
-  PagerDuty Response Plays
-  Ref: https://registry.terraform.io/providers/PagerDuty/pagerduty/latest/docs/resources/response_play 
-*/
-
-/* 
   Major Incident (P1/P2) Response Play
-*/
+
 resource "pagerduty_response_play" "major_incident_response_play" {
 
   # Summary
   name        = "Major Incident Response"
-  from        = pagerduty_user.davos_seaworth.email
+  from        = pagerduty_user.noah_cooper.email
   description = "Response play for Major Incident (P1/P2)"
 
   # What should happen when this play runs?
@@ -42,3 +37,4 @@ resource "pagerduty_response_play" "major_incident_response_play" {
   # Who can run this play on demand?
   runnability = "responders"
 }
+*/

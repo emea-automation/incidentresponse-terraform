@@ -15,7 +15,7 @@ resource "pagerduty_schedule" "support_level_1" {
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
     users                        = [
-                                    pagerduty_user.catelyn_stark.id,
+                                    pagerduty_user.noah_cooper.id,
                                   ]
     restriction {
       type              = "weekly_restriction"
@@ -54,7 +54,7 @@ resource "pagerduty_schedule" "support_level_1" {
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
     users                        = [
-                                    pagerduty_user.robb_stark.id,
+                                    pagerduty_user.paul_miller.id,
                                   ]
     restriction {
       type              = "weekly_restriction"
@@ -101,8 +101,8 @@ resource "pagerduty_schedule" "support_level_2" {
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
     users                        = [
-                                    pagerduty_user.arya_stark.id,
-                                    pagerduty_user.sansa_stark.id
+                                    pagerduty_user.noah_cooper.id
+                                
                                   ]
     restriction {
       type              = "daily_restriction"
@@ -124,8 +124,7 @@ resource "pagerduty_schedule" "operations_level_1" {
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 604800
     users                        = [
-                                    pagerduty_user.cersei_lannister.id,
-                                    pagerduty_user.jamie_lannister.id
+                                    pagerduty_user.paul_miller.id,
                                   ]
   }
 }
@@ -139,8 +138,7 @@ resource "pagerduty_schedule" "operations_level_2" {
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 604800
     users                        = [
-                                    pagerduty_user.tyrion_lannister.id,
-                                    pagerduty_user.lancel_lannister.id
+                                    pagerduty_user.ronald_green.id,
                                   ]
   }
 }
@@ -157,8 +155,8 @@ resource "pagerduty_schedule" "it_management" {
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 86400
     users                        = [
-                                    pagerduty_user.daenerys_targaryen.id,
-                                    pagerduty_user.davos_seaworth.id
+                                    pagerduty_user.ronald_green.id,
+                                    pagerduty_user.paul_miller.id
                                   ]
   }
 }
