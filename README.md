@@ -1,13 +1,10 @@
-# pagerduty-terraform-quickstart
+# Incident Response Terraformed
+
+Based on an orginal deployment from https://github.com/giranm
 
 An example quick start Terraform project to provision a PagerDuty environment.  
 This project covers most of the functionality from the [PagerDuty Provider](https://www.terraform.io/docs/providers/pagerduty/index.html), but is intended for learning/development purposes.
 
-## Summary Video (TL;DR)
-
-[![Watch the video](https://i.ytimg.com/vi/osFY5_t-E8Q/maxresdefault.jpg)](https://youtu.be/c9M5B-Ri3Nc)
-
-## Prerequisites
 
 - PagerDuty:
   - Access to a domain: https://www.pagerduty.com/sign-up/
@@ -23,7 +20,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
 1. Clone repo (via SSH) into appropriate location and enter directory.
 
     ```bash
-    $ git clone git@github.com:giranm/pagerduty-terraform-quickstart.git
+    $ git clone https://github.com/emea-automation/incidentresponse-terraform.git
     ```
 
     ```bash
@@ -32,7 +29,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
 
     > NB - if you cannot clone via SSH, try using HTTPS instead via:
     ```bash
-    $ git clone https://github.com/giranm/pagerduty-terraform-quickstart.git
+    $ git clone https://github.com/emea-automation/incidentresponse-terraform.git
     ```
 
 2. Initialise Terraform Workspace
@@ -88,6 +85,7 @@ $ terraform apply
 ```
 
 Terraform `apply` will formulate an appropriate plan depending on the order of resources to be provisioned/updated.
+Alternatively you can ```terraform apply -auto-approve``` to avoid the prompt
 
 ```bash
 $ terraform apply
